@@ -438,9 +438,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -544,9 +546,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -650,9 +654,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -756,9 +762,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -862,9 +870,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -968,9 +978,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1074,9 +1086,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
@@ -1180,9 +1194,11 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                       ],
                                     ),
                                   ),
-                                  Flexible(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.8, 0.0),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
