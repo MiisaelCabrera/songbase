@@ -497,12 +497,7 @@ class _SearchResultsWidgetState extends State<SearchResultsWidget> {
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
-                                        text: '',
-                                        icon: Icon(
-                                          Icons.add_box,
-                                          color: Color(0xFF1E1E1E),
-                                          size: 30.0,
-                                        ),
+                                        text: '+',
                                         options: FFButtonOptions(
                                           width: 30.0,
                                           height: 30.0,
@@ -512,22 +507,235 @@ class _SearchResultsWidgetState extends State<SearchResultsWidget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: FlutterFlowTheme.of(context)
-                                              .lineColor,
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: Color(0xFF1E1E1E),
-                                                  ),
+                                          color: Color(0xFF1E1E1E),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                                fontSize: 20.0,
+                                              ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(
-                                            color: Colors.transparent,
-                                            width: 1.0,
+                                            color: FlutterFlowTheme.of(context)
+                                                .lineColor,
+                                            width: 3.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(0.0),
+                                              BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                30.0, 30.0, 30.0, 0.0),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Song');
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.network(
+                                      'https://picsum.photos/seed/401/600',
+                                      width: 50.0,
+                                      height: 50.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10.0, 0.0, 0.0, 0.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'Nombre de la canción',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                              ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Text(
+                                            'Artista',
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .lineColor,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Flexible(
+                                    child: Align(
+                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () {
+                                          print('Button pressed ...');
+                                        },
+                                        text: '+',
+                                        options: FFButtonOptions(
+                                          width: 30.0,
+                                          height: 30.0,
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          iconPadding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color: Color(0xFF1E1E1E),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                                fontSize: 20.0,
+                                              ),
+                                          elevation: 3.0,
+                                          borderSide: BorderSide(
+                                            color: FlutterFlowTheme.of(context)
+                                                .lineColor,
+                                            width: 3.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                30.0, 30.0, 30.0, 0.0),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Song');
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.network(
+                                      'https://picsum.photos/seed/401/600',
+                                      width: 50.0,
+                                      height: 50.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10.0, 0.0, 0.0, 0.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'Nombre de la canción',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                              ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Text(
+                                            'Artista',
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .lineColor,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Flexible(
+                                    child: Align(
+                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () {
+                                          print('Button pressed ...');
+                                        },
+                                        text: '+',
+                                        options: FFButtonOptions(
+                                          width: 30.0,
+                                          height: 30.0,
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          iconPadding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color: Color(0xFF1E1E1E),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                                fontSize: 20.0,
+                                              ),
+                                          elevation: 3.0,
+                                          borderSide: BorderSide(
+                                            color: FlutterFlowTheme.of(context)
+                                                .lineColor,
+                                            width: 3.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
                                         ),
                                       ),
                                     ),
