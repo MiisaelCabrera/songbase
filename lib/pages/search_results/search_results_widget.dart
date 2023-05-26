@@ -501,7 +501,7 @@ class _SearchResultsWidgetState extends State<SearchResultsWidget> {
                                         icon: Icon(
                                           Icons.add_box,
                                           color: Color(0xFF1E1E1E),
-                                          size: 26.0,
+                                          size: 30.0,
                                         ),
                                         options: FFButtonOptions(
                                           width: 30.0,
@@ -511,7 +511,7 @@ class _SearchResultsWidgetState extends State<SearchResultsWidget> {
                                                   0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  2.0, 2.0, 2.0, 2.0),
+                                                  0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .lineColor,
                                           textStyle:
@@ -527,7 +527,7 @@ class _SearchResultsWidgetState extends State<SearchResultsWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(0.0),
                                         ),
                                       ),
                                     ),
