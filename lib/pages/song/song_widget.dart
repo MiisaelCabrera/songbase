@@ -421,7 +421,7 @@ class _SongWidgetState extends State<SongWidget> {
                                   ),
                                   Flexible(
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(1.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
