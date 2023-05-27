@@ -357,7 +357,7 @@ class _SongWidgetState extends State<SongWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.95,
-                      height: MediaQuery.of(context).size.height * 0.9,
+                      height: MediaQuery.of(context).size.height * 0.85,
                       decoration: BoxDecoration(
                         color: Color(0xFF1E1E1E),
                         borderRadius: BorderRadius.circular(10.0),
@@ -426,11 +426,7 @@ class _SongWidgetState extends State<SongWidget> {
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
-                                        text: 'Button',
-                                        icon: Icon(
-                                          Icons.add_box,
-                                          size: 30.0,
-                                        ),
+                                        text: '+',
                                         options: FFButtonOptions(
                                           width: 30.0,
                                           height: 30.0,
@@ -440,19 +436,22 @@ class _SongWidgetState extends State<SongWidget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: FlutterFlowTheme.of(context)
-                                              .lineColor,
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: Color(0xFF1E1E1E),
-                                                  ),
+                                          color: Color(0xFF1E1E1E),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .lineColor,
+                                                fontSize: 20.0,
+                                              ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(
-                                            color: Colors.transparent,
-                                            width: 1.0,
+                                            color: FlutterFlowTheme.of(context)
+                                                .lineColor,
+                                            width: 3.0,
                                           ),
                                           borderRadius:
                                               BorderRadius.circular(8.0),
