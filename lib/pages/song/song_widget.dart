@@ -77,7 +77,7 @@ class _SongWidgetState extends State<SongWidget> {
                               20.0, 300.0, 20.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              context.pushNamed('HomePage');
+                              context.pushNamed('About');
                             },
                             text: 'Acerca de',
                             options: FFButtonOptions(

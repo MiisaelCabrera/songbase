@@ -47,16 +47,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => SignupWidget(),
         ),
         FFRoute(
-          name: 'SearchResults',
-          path: '/searchResults',
-          builder: (context, params) => SearchResultsWidget(
-            searchKeyWords: params.getParam('searchKeyWords', ParamType.String),
-          ),
-        ),
-        FFRoute(
-          name: 'SongsList',
-          path: '/songsList',
-          builder: (context, params) => SongsListWidget(),
+          name: 'About',
+          path: '/about',
+          builder: (context, params) => AboutWidget(),
         ),
         FFRoute(
           name: 'Song',

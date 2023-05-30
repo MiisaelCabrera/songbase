@@ -171,15 +171,7 @@ class _SignupWidgetState extends State<SignupWidget> {
                                 alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
-                                    context.pushNamed(
-                                      'SearchResults',
-                                      queryParams: {
-                                        'searchKeyWords': serializeParam(
-                                          '',
-                                          ParamType.String,
-                                        ),
-                                      }.withoutNulls,
-                                    );
+                                    context.pushNamed('null');
                                   },
                                   text: 'Buscar',
                                   options: FFButtonOptions(
@@ -220,7 +212,7 @@ class _SignupWidgetState extends State<SignupWidget> {
                           EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
-                          context.pushNamed('SongsList');
+                          context.pushNamed('About');
                         },
                         text: 'Canciones',
                         options: FFButtonOptions(

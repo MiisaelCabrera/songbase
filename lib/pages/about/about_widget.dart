@@ -4,18 +4,18 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'songs_list_model.dart';
-export 'songs_list_model.dart';
+import 'about_model.dart';
+export 'about_model.dart';
 
-class SongsListWidget extends StatefulWidget {
-  const SongsListWidget({Key? key}) : super(key: key);
+class AboutWidget extends StatefulWidget {
+  const AboutWidget({Key? key}) : super(key: key);
 
   @override
-  _SongsListWidgetState createState() => _SongsListWidgetState();
+  _AboutWidgetState createState() => _AboutWidgetState();
 }
 
-class _SongsListWidgetState extends State<SongsListWidget> {
-  late SongsListModel _model;
+class _AboutWidgetState extends State<AboutWidget> {
+  late AboutModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -23,7 +23,7 @@ class _SongsListWidgetState extends State<SongsListWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SongsListModel());
+    _model = createModel(context, () => AboutModel());
   }
 
   @override

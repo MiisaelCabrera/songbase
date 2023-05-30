@@ -169,15 +169,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed(
-                                        'SearchResults',
-                                        queryParams: {
-                                          'searchKeyWords': serializeParam(
-                                            '',
-                                            ParamType.String,
-                                          ),
-                                        }.withoutNulls,
-                                      );
+                                      context.pushNamed('null');
                                     },
                                     text: 'Buscar',
                                     options: FFButtonOptions(
