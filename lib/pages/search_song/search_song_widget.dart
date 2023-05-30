@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -28,7 +27,6 @@ class _SearchSongWidgetState extends State<SearchSongWidget> {
 
     _model.textController1 ??= TextEditingController();
     _model.textController2 ??= TextEditingController();
-    _model.textController3 ??= TextEditingController();
   }
 
   @override
@@ -67,186 +65,6 @@ class _SearchSongWidgetState extends State<SearchSongWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Form(
-                        key: _model.formKey2,
-                        autovalidateMode: AutovalidateMode.disabled,
-                        child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 10.0, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        4.0, 0.0, 0.0, 0.0),
-                                    child: TextFormField(
-                                      controller: _model.textController1,
-                                      onChanged: (_) => EasyDebounce.debounce(
-                                        '_model.textController1',
-                                        Duration(milliseconds: 2000),
-                                        () => setState(() {}),
-                                      ),
-                                      onFieldSubmitted: (_) async {
-                                        if (_model.formKey2.currentState ==
-                                                null ||
-                                            !_model.formKey2.currentState!
-                                                .validate()) {
-                                          return;
-                                        }
-                                      },
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        isDense: true,
-                                        hintText: 'Search...',
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0xFF00659D),
-                                            width: 3.0,
-                                          ),
-                                          borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(5.0),
-                                            bottomRight: Radius.circular(0.0),
-                                            topLeft: Radius.circular(5.0),
-                                            topRight: Radius.circular(0.0),
-                                          ),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 3.0,
-                                          ),
-                                          borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(5.0),
-                                            bottomRight: Radius.circular(0.0),
-                                            topLeft: Radius.circular(5.0),
-                                            topRight: Radius.circular(0.0),
-                                          ),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 3.0,
-                                          ),
-                                          borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(5.0),
-                                            bottomRight: Radius.circular(0.0),
-                                            topLeft: Radius.circular(5.0),
-                                            topRight: Radius.circular(0.0),
-                                          ),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 3.0,
-                                          ),
-                                          borderRadius: BorderRadius.only(
-                                            bottomLeft: Radius.circular(5.0),
-                                            bottomRight: Radius.circular(0.0),
-                                            topLeft: Radius.circular(5.0),
-                                            topRight: Radius.circular(0.0),
-                                          ),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Clash Display',
-                                            color: Color(0xFF95A1AC),
-                                            fontSize: 14.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                      textAlign: TextAlign.start,
-                                      validator: _model.textController1Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      context.pushNamed(
-                                        'SearchResults',
-                                        queryParams: {
-                                          'searchKeyWords': serializeParam(
-                                            '',
-                                            ParamType.String,
-                                          ),
-                                        }.withoutNulls,
-                                      );
-                                    },
-                                    text: 'Buscar',
-                                    options: FFButtonOptions(
-                                      height: 44.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 0.0, 24.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF00659D),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                          ),
-                                      elevation: 3.0,
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 0.0,
-                                      ),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(0.0),
-                                        bottomRight: Radius.circular(0.0),
-                                        topLeft: Radius.circular(0.0),
-                                        topRight: Radius.circular(5.0),
-                                      ),
-                                      hoverColor: Color(0xFF005A92),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            10.0, 15.0, 10.0, 0.0),
-                        child: FFButtonWidget(
-                          onPressed: () async {
-                            context.pushNamed('SongsList');
-                          },
-                          text: 'Canciones',
-                          options: FFButtonOptions(
-                            width: double.infinity,
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF1E1E1E),
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Poppins',
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                            elevation: 3.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
-                            ),
-                            borderRadius: BorderRadius.circular(8.0),
-                            hoverColor: Colors.black,
-                          ),
-                        ),
-                      ),
                       Flexible(
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -373,7 +191,7 @@ class _SearchSongWidgetState extends State<SearchSongWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Form(
-                            key: _model.formKey1,
+                            key: _model.formKey,
                             autovalidateMode: AutovalidateMode.disabled,
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -384,11 +202,84 @@ class _SearchSongWidgetState extends State<SearchSongWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     child: TextFormField(
-                                      controller: _model.textController2,
+                                      controller: _model.textController1,
                                       autofocus: true,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         labelText: 'Nombre del artista',
+                                        labelStyle: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .accent1,
+                                              fontSize: 10.0,
+                                            ),
+                                        hintStyle: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 10.0,
+                                            ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0x00000000),
+                                            width: 2.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(5.0),
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0xFF00659D),
+                                            width: 2.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(5.0),
+                                        ),
+                                        errorBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0x00000000),
+                                            width: 2.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(5.0),
+                                        ),
+                                        focusedErrorBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0x00000000),
+                                            width: 2.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(5.0),
+                                        ),
+                                        filled: true,
+                                        fillColor: FlutterFlowTheme.of(context)
+                                            .lineColor,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 10.0,
+                                          ),
+                                      validator: _model.textController1Validator
+                                          .asValidator(context),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20.0, 10.0, 20.0, 0.0),
+                                  child: Container(
+                                    width: double.infinity,
+                                    child: TextFormField(
+                                      controller: _model.textController2,
+                                      autofocus: true,
+                                      obscureText: false,
+                                      decoration: InputDecoration(
+                                        labelText: 'Nombre de la canción',
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -454,90 +345,17 @@ class _SearchSongWidgetState extends State<SearchSongWidget> {
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 10.0, 20.0, 0.0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    child: TextFormField(
-                                      controller: _model.textController3,
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText: 'Nombre de la canción',
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .accent1,
-                                              fontSize: 10.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 10.0,
-                                            ),
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(5.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0xFF00659D),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(5.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(5.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(5.0),
-                                        ),
-                                        filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .lineColor,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            fontSize: 10.0,
-                                          ),
-                                      validator: _model.textController3Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 10.0, 20.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       context.pushNamed(
                                         'Song',
                                         queryParams: {
                                           'author': serializeParam(
-                                            '',
+                                            _model.textController1.text,
                                             ParamType.String,
                                           ),
                                           'track': serializeParam(
-                                            '',
+                                            _model.textController2.text,
                                             ParamType.String,
                                           ),
                                         }.withoutNulls,
