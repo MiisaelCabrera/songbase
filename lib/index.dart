@@ -5,3 +5,4 @@ export '/pages/search_results/search_results_widget.dart'
     show SearchResultsWidget;
 export '/pages/songs_list/songs_list_widget.dart' show SongsListWidget;
 export '/pages/song/song_widget.dart' show SongWidget;
+export '/pages/search_song/search_song_widget.dart' show SearchSongWidget;

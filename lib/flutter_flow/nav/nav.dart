@@ -61,7 +61,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Song',
           path: '/song',
-          builder: (context, params) => SongWidget(),
+          builder: (context, params) => SongWidget(
+            author: params.getParam('author', ParamType.String),
+            track: params.getParam('track', ParamType.String),
+          ),
+        ),
+        FFRoute(
+          name: 'SearchSong',
+          path: '/searchSong',
+          builder: (context, params) => SearchSongWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       urlPathStrategy: UrlPathStrategy.path,
