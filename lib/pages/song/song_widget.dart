@@ -212,7 +212,7 @@ class _SongWidgetState extends State<SongWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       AutoSizeText(
-                                        'Nombre de la canción',
+                                        widget.track!,
                                         maxLines: 2,
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -226,7 +226,7 @@ class _SongWidgetState extends State<SongWidget> {
                                             ),
                                       ),
                                       Text(
-                                        'Autor',
+                                        widget.author!,
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
