@@ -274,21 +274,7 @@ class _SongWidgetState extends State<SongWidget> {
                                 Align(
                                   alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
-                                    'Darling, darling, oh, turn the lights back on now\nWatching, watching, as the credits all roll down\nCrying, crying, you know we\'re playing to a full house, house\nNo heroes, villains, one to blame\nWhile wilted roses fill the stage\nAnd the thrill, the thrill is gone\nOur debut was a masterpiece\nBut in the end for you and me\nOh, the show, it can\'t go on\nWe used to have it all, but now\'s our curtain call\nSo hold for the applause, oh\nAnd wave out to the crowd, and take our final bow\nOh, it\'s our time to go, but at least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nDarling, darling, you know that we are sold out\nThis is fading, but the band plays on now\nWe\'re crying, crying, so let the velvet roll down, down\nNo heroes, villains, one to blame\nWhile wilted roses fill the stage\nAnd the thrill, the thrill is gone\nOur debut was a masterpiece\nOur lines we read so perfectly\nBut the show, it can\'t go on\nWe used to have it all, but now\'s our curtain call\nSo hold for the applause, oh\nAnd wave out to the crowd, and take our final bow\nOh, it\'s our time to go, but at least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nStole the show</span></div><div jsname=\"U8S5sf\" class=\"ujudUb WRZytc\"><span jsname=\"YS01Ge\">At least we stole the show\nStole the show\nAt least we stole the show\n',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .lineColor,
-                                        ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
-                                  child: Text(
-                                    'Darling, darling, oh, turn the lights back on now\nWatching, watching, as the credits all roll down\nCrying, crying, you know we\'re playing to a full house, house\nNo heroes, villains, one to blame\nWhile wilted roses fill the stage\nAnd the thrill, the thrill is gone\nOur debut was a masterpiece\nBut in the end for you and me\nOh, the show, it can\'t go on\nWe used to have it all, but now\'s our curtain call\nSo hold for the applause, oh\nAnd wave out to the crowd, and take our final bow\nOh, it\'s our time to go, but at least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nDarling, darling, you know that we are sold out\nThis is fading, but the band plays on now\nWe\'re crying, crying, so let the velvet roll down, down\nNo heroes, villains, one to blame\nWhile wilted roses fill the stage\nAnd the thrill, the thrill is gone\nOur debut was a masterpiece\nOur lines we read so perfectly\nBut the show, it can\'t go on\nWe used to have it all, but now\'s our curtain call\nSo hold for the applause, oh\nAnd wave out to the crowd, and take our final bow\nOh, it\'s our time to go, but at least we stole the show\nAt least we stole the show\nAt least we stole the show\nAt least we stole the show\nStole the show</span></div><div jsname=\"U8S5sf\" class=\"ujudUb WRZytc\"><span jsname=\"YS01Ge\">At least we stole the show\nStole the show\nAt least we stole the show\n',
+                                    'Darling, darling, oh, turn the lights back on now\nWatching, watching, as the credits all roll down\nCrying, crying, you know we\'re playing to a full house, house\nNo heroes, villains, one to blame\nWhile wilted roses fill the stage\nAnd the thrill, the thrill is gone\nOur debut was a masterpiece\nBut in the end for you and me\nOh, the show, it can\'t go on\nWe used to have it all, but now\'s our curtain call\n',
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -300,6 +286,33 @@ class _SongWidgetState extends State<SongWidget> {
                                   ),
                                 ),
                               ],
+                            ),
+                            FFButtonWidget(
+                              onPressed: () {
+                                print('Button pressed ...');
+                              },
+                              text: 'Me gusta',
+                              options: FFButtonOptions(
+                                width: double.infinity,
+                                height: 40.0,
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: Color(0xFF00659D),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
+                                elevation: 3.0,
+                                borderSide: BorderSide(
+                                  color: Colors.transparent,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
                             ),
                           ],
                         ),
