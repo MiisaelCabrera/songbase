@@ -219,7 +219,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             10.0, 15.0, 10.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('SongsList');
+                            context.pushNamed('SearchSong');
                           },
                           text: 'Canciones',
                           options: FFButtonOptions(
